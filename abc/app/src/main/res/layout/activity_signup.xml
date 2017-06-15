@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.crowdeye.SignupActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etFName"
+        android:layout_marginTop="58dp"
+        android:hint="First name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etLName"
+        android:layout_below="@+id/etFName"
+        android:layout_alignLeft="@+id/etFName"
+        android:layout_alignStart="@+id/etFName"
+        android:hint="Last name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etLName"
+        android:layout_alignLeft="@+id/etLName"
+        android:layout_alignStart="@+id/etLName"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etPhoneNumber"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
+        android:hint="Phone number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etPhoneNumber"
+        android:layout_alignLeft="@+id/etPhoneNumber"
+        android:layout_alignStart="@+id/etPhoneNumber"
+        android:hint="Password" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/bNext"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signing via facebook"
+        android:id="@+id/bSignInFacebook"
+        android:layout_below="@+id/bNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#1f1993"
+        android:textColor="#f6f6fa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by creating an account ,you agree to crowdEye&apos;s terms and policies"
+        android:id="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#161414"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

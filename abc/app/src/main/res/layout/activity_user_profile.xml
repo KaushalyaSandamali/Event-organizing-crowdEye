@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.crowdeye.UserProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Profile"
+        android:id="@+id/tvMyProfile"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/profile"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to CrowdEye!"
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_marginTop="42dp"
+        android:typeface="serif"
+        android:layout_below="@+id/tvMyProfile"
+        android:layout_toRightOf="@+id/tvEmail"
+        android:layout_toEndOf="@+id/tvEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Username"
+        android:id="@+id/tvUsername"
+        android:layout_below="@+id/tvWelcomeMsg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUsername"
+        android:layout_below="@+id/tvUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Tharindu Rangana"
+        android:editable="true"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Email"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/tvEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="trangana1993@gmail.com"
+        android:editable="true"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Events"
+        android:id="@+id/bViewEvents"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tvMyProfile"
+        android:layout_toEndOf="@+id/tvMyProfile" />
+
+    <Button
+        android:text="create event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bCreateEvent"
+        android:layout_alignBaseline="@+id/bViewEvents"
+        android:layout_alignBottom="@+id/bViewEvents"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

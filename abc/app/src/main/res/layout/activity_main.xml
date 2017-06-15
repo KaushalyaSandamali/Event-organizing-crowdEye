@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.user.crowdeye.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Profile"
+            android:id="@+id/tvMyProfile"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/etEmail"
+            android:layout_alignRight="@+id/etEmail"
+            android:layout_marginTop="73dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome to CrowdEye!"
+            android:id="@+id/tvWelcomeMsg"
+            android:layout_marginTop="29dp"
+            android:typeface="serif"
+            android:layout_below="@+id/tvMyProfile"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Username"
+            android:id="@+id/tvUsername"
+            android:layout_marginTop="45dp"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="end"
+            android:layout_below="@+id/tvWelcomeMsg"
+            android:layout_alignStart="@+id/etUsername"
+            android:layout_alignLeft="@+id/etUsername"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUsername"
+            android:text="Tharindu Rangana"
+            android:editable="true"
+            android:textIsSelectable="true"
+            android:layout_below="@+id/tvUsername"
+            android:layout_alignStart="@+id/etEmail"
+            android:layout_alignLeft="@+id/etEmail"/>
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView3"
+            android:background="@drawable/profile"
+            android:layout_below="@+id/etEmail"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Events"
+            android:id="@+id/bViewEvents"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            android:text="trangana1993@gmail.com"
+            android:editable="true"
+            android:textIsSelectable="true"
+            android:layout_below="@+id/tvEmail"
+            android:layout_alignEnd="@+id/bViewEvents"
+            android:layout_alignRight="@+id/bViewEvents"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email"
+            android:id="@+id/tvEmail"
+            android:textAlignment="viewStart"
+            android:layout_gravity="start"
+            android:layout_below="@+id/etUsername"
+            android:layout_alignStart="@+id/etEmail"
+            android:layout_alignLeft="@+id/etEmail"/>
+    </RelativeLayout>
+
+
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
