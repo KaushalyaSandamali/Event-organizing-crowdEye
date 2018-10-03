@@ -1,0 +1,2 @@
+# Event-organizing-crowdEye
+The aim of this project is to develop a system which contains an android app, iOS app and web application which facilitate organizing and managing various events in a proper way through involving the participants by giving the opportunity to express suggestions efficiently and also ensuring the participant's safety and the freedom by the means of tracking as well as giving the chance of networking.
